@@ -36,7 +36,7 @@
             ><span class="web">Web</span>Studio</a
           >
           <ul class="nav-list">
-            <li><a class="menu-links" href="">Agencja</a></li>
+            <li><a class="menu-links is-active" href="">Agencja</a></li>
             <li><a class="menu-links" href="portfolio.html">Portfolio</a></li>
             <li><a class="menu-links" href="">Kontakt</a></li>
           </ul>
@@ -435,7 +435,16 @@
         </div>
       </div>
     </footer>
-
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close" data-modal-close>
+          <svg width="30" height="30">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+          x
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
