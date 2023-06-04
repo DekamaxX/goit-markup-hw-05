@@ -646,7 +646,8 @@ h1 {
   height: 30px;
   width: 30px;
   border: none;
-  background: #fff;
+  background: black;
+  fill: green;
 }
 
 .close:hover {
