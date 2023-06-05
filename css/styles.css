@@ -4,29 +4,6 @@ ul {
   margin: 0;
 }
 
-:root {
-  --brand-color-blue: #2196f3;
-  --brand-color-grey: #757575;
-  --white-tekst: #fff;
-  --background-dark: #2f303a;
-  --background-light: #f5f4fa;
-  --header-border: #ececec;
-  --img-shadow-first: #0000001f; /* 0.12 opacity */
-  --img-shadow-second: #00000024; /* 0.14 opacity */
-  --img-shadow-third: #00000033; /* 0.2 opacity */
-  --button-shadow-hover-first: #0000001a; /* 0.1 opacity */
-  --button-shadow-hover-second: #00000014;
-  --grid-shadow-second: #0000000f;
-  --grid-shadow-third: #00000029; /* 0.16 opacity */
-  --grid-border: #eee;
-  --overlay: #2f303a66;
-  --icon-color: #afb1b8;
-  --icon-color-footer: #ffffff1a;
-  --overlay-what-we-do: rgba(47, 48, 58, 0.8);
-  --default-time: 250ms;
-  --default-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --img-overlay-portfolio: rgba(33, 150, 243, 0.9);
-}
 h2 {
   font-weight: 700;
   font-size: 36px;
@@ -407,7 +384,7 @@ h1 {
 }
 .container {
   width: 1200px;
-  margin: 0 200px;
+  margin: 0 auto;
 }
 .navigation-container {
   display: flex;
@@ -567,7 +544,7 @@ h1 {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 15px;
   margin-bottom: 94px;
 }
@@ -646,7 +623,6 @@ h1 {
   height: 30px;
   width: 30px;
   border: none;
-  background: black;
 }
 
 .close:hover {
