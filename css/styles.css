@@ -109,7 +109,7 @@ a.contact-links:active {
   fill: #2196f3;
 }
 
-a.nav-links.agency::after {
+a.nav-links.is-active::after {
   content: "";
   display: block;
   position: relative;
