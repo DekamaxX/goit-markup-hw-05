@@ -1,3 +1,40 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+  width: 1600px;
+  letter-spacing: 0.03em;
+}
+
+:root {
+  --brand-color-blue: #2196f3;
+  --brand-color-grey: #757575;
+  --white-tekst: #fff;
+  --background-dark: #2f303a;
+  --background-light: #f5f4fa;
+  --header-border: #ececec;
+  --img-shadow-first: #0000001f; /* 0.12 opacity */
+  --img-shadow-second: #00000024; /* 0.14 opacity */
+  --img-shadow-third: #00000033; /* 0.2 opacity */
+  --button-shadow-hover-first: #0000001a; /* 0.1 opacity */
+  --button-shadow-hover-second: #00000014;
+  --grid-shadow-second: #0000000f;
+  --grid-shadow-third: #00000029; /* 0.16 opacity */
+  --grid-border: #eee;
+  --overlay: #2f303a66;
+  --icon-color: #afb1b8;
+  --icon-color-footer: #ffffff1a;
+  --overlay-what-we-do: rgba(47, 48, 58, 0.8);
+  --default-time: 250ms;
+  --default-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --img-overlay-portfolio: rgba(33, 150, 243, 0.9);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -513,7 +550,8 @@ a.button-portfolio:active {
 
 .container {
   width: 1200px;
-  margin: 0 200px;
+  margin: 0 auto;
+  padding: 0 15 0 15;
 }
 
 .navigation-container {
@@ -683,16 +721,17 @@ a.button-portfolio:active {
 
 .modal {
   display: flex;
-  justify-content: flex-end;
-  position: absolute;
-  left: 536px;
-  top: 221px;
+  position: fixed;
   width: 528px;
-  height: 521px;
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  height: 581px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  background-color: var(--white-tekst);
+  box-shadow: 0px 1px 3px var(--img-shadow-first),
+    0px 1px 1px var(--img-shadow-second), 0px 2px 1px var(--img-shadow-third);
   border-radius: 4px;
+  flex-direction: row-reverse;
 }
 
 .modal-button {
